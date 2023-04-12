@@ -1,0 +1,287 @@
+:root{
+    --color-primario: rgb(51, 51, 184);
+    --color-secundario: rgb(239, 240, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+main{
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    margin: 0rem, 0.2rem;
+    overflow: hidden;
+}
+
+article{
+    display: flex;
+    padding: 0.4rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label{
+    font-size: 0.8rem;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    font-size: 0.8rem;
+}
+
+.container-fluid{
+    flex-direction: row;
+}
+
+.navbar-nav{
+    margin-left: 0.3rem;
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.buttonNav{
+    width: 1rem;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    margin-top: 1rem;
+    color: var(--color-primario);
+}
+
+.conteinerMain{
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.conteinerInputs--conteinerMain{
+    width: 100%;
+}
+
+.inputs--conteinerInputs{
+    align-items: center;
+}
+
+.divLabelButton{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 0.2rem;
+}
+
+.dropdown-toggle {
+    width: 4rem;
+    height: 2rem;
+    padding: 0 !important;
+}
+
+.textAreaMain{
+    height: 12rem;
+    width: 95% !important;
+}
+
+.methedDiv{
+    padding-top: 2rem;
+    align-items: baseline;
+}
+
+.strengthDiv{
+    padding-bottom: 1rem;
+    align-items: baseline;
+}
+
+.methedDiv, .strengthDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.methedDiv h3, .strengthDiv h3{
+    font-size: 1.2rem;
+}
+
+.sectionCard{
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.sectionCard h3{
+    color: var(--color-primario);
+    text-align: center;
+}
+
+.conteinerCard--sectionCard{
+    display: flex;
+    gap: 1rem;
+}
+
+.card{
+    background-color: var(--color-secundario) !important;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.recreate{
+    color: var(--color-primario);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.examplesButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.examplePhrase{
+    background-color: var(--color-secundario);
+    padding: 0.5rem;
+}
+
+.conteinerUseful{
+    background-color: var(--color-secundario);
+    margin-top: 1rem;
+}
+
+.conteinerUseful h3{
+    color: var(--color-primario);
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.conteinerUseful ul {
+    padding: 1rem;
+}
+
+.conteinerUseful ul li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conteinerIcon--conteinerUseful{
+    width: 10%;
+}
+
+.conteinerText--conteinerUseful{
+    display: flex;
+    width: 70%;
+}
+
+.conteinerPlagiarism h3{
+    margin-top: 3rem;
+    color: var(--color-primario);
+    text-align: center;
+}
+
+.conteinerWhyUs h3{
+    margin-top: 3rem;
+    color: var(--color-primario);
+    text-align: center;
+}
+
+.conteinerBenefits h3{
+    color: var(--color-primario);
+    text-align: center;
+}
+
+.conteinerBenefits{
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: var(--color-secundario);
+}
+
+.conteinerUseCase{
+    margin-top: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteinerUseCase h2{
+    color: var(--color-primario);
+}
+
+.conteinerUseCase p{
+    background-color: var(--color-secundario);
+    width: fit-content;
+    margin: 0.4rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 10%;
+}
+
+.conteinerTips{
+    margin-top: 3rem;
+    background-color: var(--color-secundario);
+    padding: 1rem;
+}
+
+.conteinerTips h3, .conteinerTips h4{
+    color: var(--color-primario);
+}
+
+.exampleProducts{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.exampleProducts h2, .exampleProducts h3{
+    color: var(--color-primario);
+}
+
+.conteinerProducts{
+    margin-top: 3rem;
+    text-align: center;
+    padding: 1rem;
+    align-items: center;
+}
+
+.conteinerProducts h3{
+    color:  var(--color-primario);
+}
+
+.product1--conteinerProducts, .product3--conteinerProducts, .product6--conteinerProducts{
+    background-color: var(--color-secundario);
+}
+
+.conteinerOtherServices{
+    text-align: center;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.conteinerOtherServices h3{
+    color: var(--color-primario);
+}
+
+.conteinerOtherServices p{
+    background-color: var(--color-secundario);
+    width: fit-content;
+    margin: 0.4rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 10%;
+}
