@@ -77,17 +77,11 @@ nav{
     width: 1rem;
 }
 
-.section1{
+.section1, .section2, .section3{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.section2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 0 0.4rem;
 }
 
