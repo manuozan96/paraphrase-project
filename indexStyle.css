@@ -19,7 +19,7 @@ main{
     justify-content: center;
     padding-left: 0.4rem;
     padding-right: 0.4rem;
-    margin: 0rem, 0.2rem;
+    margin: 0rem 0.2rem;
     overflow: hidden;
 }
 
@@ -61,6 +61,7 @@ nav{
     display: flex !important;
     flex-direction: column !important;
     align-items: end;
+    margin-right: 0.5rem;
     width: 100%;
 }
 
@@ -87,6 +88,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 0.4rem;
 }
 
 .title{
@@ -113,6 +115,11 @@ nav{
     width: 90%;
     flex-direction: row;
     margin-bottom: 0.2rem;
+}
+
+.conteinerbuttonUpload__inputs--conteinerInputs{
+    flex-direction: row;
+    margin-top: 0.1rem;
 }
 
 .dropdown-toggle {
