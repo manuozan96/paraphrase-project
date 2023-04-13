@@ -53,6 +53,25 @@ nav{
     flex-direction: row !important;
 }
 
+.conteinerElementsNav{
+    width: 100%;
+}
+
+.conteinerUl--conteinerELementsNav{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: end;
+    width: 100%;
+}
+
+.conteinerUl--conteinerELementsNav button{
+    height: 1.8rem;
+    font-size: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .buttonNav{
     width: 1rem;
 }
@@ -62,6 +81,12 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .title{
@@ -85,6 +110,7 @@ nav{
 .divLabelButton{
     display: flex;
     align-items: center;
+    width: 90%;
     flex-direction: row;
     margin-bottom: 0.2rem;
 }
@@ -118,6 +144,16 @@ nav{
 
 .methedDiv h3, .strengthDiv h3{
     font-size: 1.2rem;
+}
+
+.conteinerSmallButton--conteinerMain{
+    align-items: center;
+    text-align: center;
+}
+
+.conteinerSmallButton--conteinerMain small{
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
 }
 
 .sectionCard{
@@ -154,6 +190,14 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.conteinerExamples{
+    padding: 0.2rem;
+}
+
+.conteinerExamples small{
+    margin-left: 0.5rem;
 }
 
 .examplePhrase{
