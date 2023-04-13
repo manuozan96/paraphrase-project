@@ -117,10 +117,21 @@ nav{
     margin-bottom: 0.2rem;
 }
 
+
 .conteinerbuttonUpload__inputs--conteinerInputs{
+    gap: 2rem;
     flex-direction: row;
-    margin-top: 0.1rem;
+    margin-top: 0.5rem !important;
+    width: 100%;
+    margin-bottom: 2.3rem;
 }
+
+.inputs--conteinerInputs label{
+    text-align: start;
+    width: 90%;
+    margin-bottom: 0.5rem;
+    }
+    
 
 .dropdown-toggle {
     width: 4rem;
