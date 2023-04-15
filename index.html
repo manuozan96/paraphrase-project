@@ -14,7 +14,8 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="light" style="background-color: rgb(239, 240, 255);">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="light"
+            style="background-color: rgb(239, 240, 255);">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="https://w7.pngwing.com/pngs/628/224/png-transparent-bootstrap-plain-wordmark-logo-icon.png"
@@ -48,44 +49,49 @@
                     <div class="row conteinerInputs--conteinerMain">
                         <div class="col inputs--conteinerInputs">
 
-                            <div class="row divLabelButton">
-                                <div class="col">
-                                    <label for="floatingTextarea1" class="col">Input</label>
-                                </div>
-                                <div class="col divLabelButton">
-                                    <div class="dropdown" class="col">
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            All
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Product1</a></li>
-                                            <li><a class="dropdown-item" href="#">Product2</a></li>
-                                            <li><a class="dropdown-item" href="#">product3</a></li>
-                                        </ul>
+                            <div class="divConteiner__inputs--conteinerInputs">
+                                <div class="row divLabelButton">
+                                    <div class="col">
+                                        <label for="floatingTextarea1" class="col">Input</label>
+                                    </div>
+                                    <div class="col divLabelButton">
+                                        <div class="dropdown" class="col">
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                All
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Product1</a></li>
+                                                <li><a class="dropdown-item" href="#">Product2</a></li>
+                                                <li><a class="dropdown-item" href="#">product3</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
+
+                                <textarea class="form-control textAreaMain" placeholder="Leave a comment here"
+                                    id="floatingTextarea1" maxlength="1000"></textarea>
+
+                                <div class="row g-3 conteinerbuttonUpload__inputs--conteinerInputs">
+                                    <div class="col">
+                                        <button type="button" class="btn btn-outline-primary">Upload</button>
+                                        <small>docs, pdf</small>
+                                    </div>
+                                    <div class="col">
+                                        <p>0/1000</p>
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <textarea class="form-control textAreaMain" placeholder="Leave a comment here"
-                                id="floatingTextarea1" maxlength="1000"></textarea>
-
-                            <div class="row g-3 conteinerbuttonUpload__inputs--conteinerInputs">
-                                <div class="col">
-                                    <button type="button" class="btn btn-outline-primary">Upload</button>
-                                    <small>docs, pdf</small>
-                                </div>
-                                <div class="col">
-                                    <p>0/1000</p>
-                                </div>
+                            <div class="divConteiner__inputs--conteinerInputs">
+                                <label for="floatingTextarea2">Output</label>
+                                <textarea class="form-control textAreaMain" placeholder="Leave a comment here"
+                                    id="floatingTextarea2" maxlength="1000"></textarea>
                             </div>
-
-                            <label for="floatingTextarea2">Output</label>
-                            <textarea class="form-control textAreaMain" placeholder="Leave a comment here"
-                                id="floatingTextarea2" maxlength="1000"></textarea>
                         </div>
                     </div>
-                    <div class="row g-3">
+                    <div class="row g-3 conteinerMethedStrength">
                         <div class="col methedDiv">
                             <h3>Methed :</h3>
                             <button type="button" class="btn btn-link">Rewriter</button>
@@ -261,18 +267,20 @@
                 </div>
                 <div class="conteinerUseCase">
                     <h2>Use Cases</h2>
-                    <p>Product <strong>1</strong></p>
-                    <p>Product <strong>12</strong></p>
-                    <p>Product <strong>134</strong></p>
-                    <p>Product <strong>1566</strong></p>
-                    <p>Product <strong>12</strong></p>
-                    <p>Product <strong>5</strong></p>
-                    <p>Product <strong>67</strong></p>
-                    <p>Product <strong>76</strong></p>
-                    <p>Product <strong>4</strong></p>
-                    <p>Product <strong>87</strong></p>
-                    <p>Product <strong>345</strong></p>
-                    <p>Product <strong>9876</strong></p>
+                    <div class="conteinerProducts--conteinerUseCase">
+                        <p>Product <strong>1</strong></p>
+                        <p>Product <strong>12</strong></p>
+                        <p>Product <strong>134</strong></p>
+                        <p>Product <strong>1566</strong></p>
+                        <p>Product <strong>12</strong></p>
+                        <p>Product <strong>5</strong></p>
+                        <p>Product <strong>67</strong></p>
+                        <p>Product <strong>76</strong></p>
+                        <p>Product <strong>4</strong></p>
+                        <p>Product <strong>87</strong></p>
+                        <p>Product <strong>345</strong></p>
+                        <p>Product <strong>9876</strong></p>
+                    </div>
                 </div>
 
             </section>
@@ -300,26 +308,38 @@
                 </div>
                 <div class="exampleProducts">
                     <h2>Example Products</h2>
-                    <div>
-                        <h3>before</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam animi voluptatum nostrum
-                            ipsa
-                            voluptates nisi deleniti non. Doloremque eligendi magni ex voluptate quasi. Inventore
-                            sapiente,
-                            maxime quasi nesciunt assumenda vel!</p>
+                    <div class="conteinerBeforeAfter--exampleProducts">
+                        <div>
+                            <h3>before</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam animi voluptatum nostrum
+                                ipsa
+                                voluptates nisi deleniti non. Doloremque eligendi magni ex voluptate quasi. Inventore
+                                sapiente,
+                                maxime quasi nesciunt assumenda vel!</p>
+                        </div>
+                        <div>
+                            <h3>After</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa inventore earum vel
+                                dolores
+                                reprehenderit temporibus qui possimus. Quod, nisi aspernatur esse deserunt molestiae
+                                eveniet
+                                officia sunt, iure laboriosam, iste inventore.</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>After</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa inventore earum vel dolores
-                            reprehenderit temporibus qui possimus. Quod, nisi aspernatur esse deserunt molestiae eveniet
-                            officia sunt, iure laboriosam, iste inventore.</p>
+                    <div class="conteinerValues--exampleProducts">
+                        <div>
+                            <h3>22.090</h3>
+                            <p>text short</p>
+                        </div>
+                        <div>
+                            <h3>506.059</h3>
+                            <p>text short</p>
+                        </div>
+                        <div>
+                            <h3>345.442.343</h3>
+                            <p>text short</p>
+                        </div>
                     </div>
-                    <h3>22.090</h3>
-                    <p>text short</p>
-                    <h3>506.059</h3>
-                    <p>text short</p>
-                    <h3>345.442.343</h3>
-                    <p>text short</p>
                 </div>
                 <div class="conteinerProducts product1--conteinerProducts">
                     <h3>Products 1</h3>
@@ -365,36 +385,52 @@
                 </div>
                 <div class="conteinerOtherServices">
                     <h3>Other Supported Languages</h3>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
-                    <p>other services</p>
+                    <div class="conteinerP--conteinerOtherServices">
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                        <p>other services</p>
+                    </div>
                 </div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <div class="conteinerImages">
+                    <button>
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU6VZ////82Up4zUJ1UbKx4ibswTpyMmsQ5V6EtTJupss8nSJnN0+WVosgqSpo4U56eqcyDksDj5vBwgbb3+PxFXqNabqt9jb3S2OhidbC9xdy3v9l0hLjZ3etLY6bq7fTEyt4dQpdJYqekrs2uttK97JEgAAADFUlEQVR4nO3c2XLiMBBAUUZmM3IsFsNgSIAk/P83TsLzjCNbI3c3de9rqlw+BV7VZDIhIiIiIiIiIiIiIiIiIlJeCM4VxbzsrJDey8G50s/3h91ss3jp7LdJYii8262rbfPr545eem/753y9qWJwjypzwqJuT7E6i0JX7459fOaEvn3r5zMmLPy5r8+W0L9Gn15MCkO9GuAzJHSh9xFoS1hcrsOAVoTzdsghaEhYTAcDbQjdfjjQhDAshx6DRoShrhKAFoR+nQI0ICzaJKABYZlyEFoQ1p9pQPVCd0m4UJgQ+lsiULvQXVKB2oW+1ysZg8KwTAYqF5ZpF3sDQr99cqFLvJ3RL0y+2usXDnw1Y0YYUh58TQiL3X8Aql57Kvschs3xdF/9pftC8fphj3vSalZ6X5tbA/axJ5rtzhdBem+HVEeeaKq55s+po1DHAW/vJj+/yfdifdxX1OYX9LuwjxIejH5Fv3LTGOBJ8eXup+KEH056P4cXJby+S+9mQlHCUy29mwlFCddz6d1MKEq4sXsmjRTOEGoOIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQR27+78qYucRX37GFR7Jrb65ddBQz1Hbv2sCjpSixvEcgEitlhcN+cNenRnZxagThm+wK6ghC4TXiEYSr8tmFwstvIwhb2XX+EYR72St+fmEj6htDuBW+a8svPArPauQXnp9e+CI8jZJfKP38mF8ofDnML2wuwsOn2YVX6ena7MKt9PRpduHt6YUr6eHM7MKF9HBmduGr9OvU7MKp9BR4bmEjDcwulJ9zzy2U/+1hbqH0s1N+4afsq8QRhPKT/LmFB+kb7+xC6Tua7ELhdacRhOLPTtmFCv7ZQOY14LP4xWISlh2FqFkM17UF8VPpF7Hjb3HTJl2nSwXAzp5jnqYrhAj1hxCh/hAi1B9ChPpDiFB/CBHqDyFC/SFEqD+ECPWHEKH+ECLUH0KE+kOIUH8IEeoPIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQfwgR6g8hQv0hRKg/hAj1hxCh/hAi1B9ChD36A+1ASVvVoq0WAAAAAElFTkSuQmCC">
+                    </button>
+                    <button>
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGgqf-LkQJMS9L3y2Yhg8SWe2DjBHJNNGnMA&usqp=CAU" />
+                    </button>
+                    <button>
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7_JFMAnEwFyhGwBZiXx5STB0XxDTU3FxSEQ&usqp=CAU" />
+                    </button>
+                    <button>
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPgwKQ5YgtJ2r-XbmvYUZgpjmNUzm0zqbfnA&usqp=CAU" />
+                    </button>
+                </div>
             </section>
         </article>
     </main>
