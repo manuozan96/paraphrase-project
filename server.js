@@ -3,7 +3,6 @@ const axios = require("axios");
 
 const app = express();
 app.use(express.json());
-const port = 3000;
 
 app.post("/paraphrase", async (req, res) => {
   const inputText = req.body.input;
@@ -30,6 +29,6 @@ app.post("/paraphrase", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Servidor en ejecución en el puerto ${port}`);
+app.listen(3000, () => {
+  console.log(`Servidor en ejecución en el puerto 3000.`);
 });
